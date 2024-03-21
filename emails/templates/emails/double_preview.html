@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email preview</title>
+  </head>
+  <body style="margin: 0; height: 100%; display:flex; align-items: stretch;">
+    <iframe style="flex: 1;" id="text" frameborder="0" src="{% url 'preview' ctype_id=ctype_id obj_id=obj_id mode="text" %}" ></iframe>
+    <iframe style="flex: 1;" id="html" frameborder="0" src="{% url 'preview' ctype_id=ctype_id obj_id=obj_id mode="html" %}" ></iframe>
+  </body>
+</html>
